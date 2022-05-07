@@ -9,12 +9,12 @@ class Header extends React.Component {
         <body className="d-flex h-100 bg-image">
           <div className="d-flex w-100 h-100 p-3 mx-auto flex-column" id="mask">
             <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-              <h2>Herb &#38; Fire</h2>
+              <h1>The Grow Club</h1>
 
               <main className="px-3">
-                <h1>Welcome to our Garden</h1>
+                <h2>Welcome to our Botanical Garden:</h2>
                 <p className="lead" id="coverslogan">
-                  A Community of Hobby Growers
+                  A Community For Growers
                 </p>
                 <p className="lead" id="coverbutton">
                   <Button outline color="warning" href="#">
