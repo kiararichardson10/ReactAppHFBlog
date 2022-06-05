@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Community } from "./components/CommunityComponent";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 // const Home = () => (
 //   <div>
@@ -34,6 +35,7 @@ function App() {
     <div>
       <Header />
       <Home />
+      <Footer />
     </div>
   );
 }
