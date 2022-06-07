@@ -30,7 +30,7 @@ export const Footer = () => {
               Kiara Richardson
             </a>
           </Col>
-          <Col className="text-warning">
+          <Col>
             <a
               role="button"
               className="btn btn-link"

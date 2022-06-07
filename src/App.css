@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-h2, p {
-  font-family: 'Permanent Marker', cursive;
-  color: blanchedalmond;
-  text-align: center;
+#navbar {
+  background: linear-gradient(to right, #f3ac69, #d37b34, #60106B);
 }
 
 h1 {
@@ -11,20 +9,20 @@ h1 {
   color: blanchedalmond;
 }
 
-body {
+main {
   background-image: url(/src/photos/bgphoto.JPG);
   background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-/* .cover-container {
-  max-width: 42em;
-} */
-
-/* #mask {
-  background-color:  rgba(0, 0, 0, 0.6);
-} */
+h2, p {
+  font-family: 'Permanent Marker', cursive;
+  color: blanchedalmond;
+  text-align: center;
+}
 
 .site-footer{
   margin-top: 1rem;
@@ -36,6 +34,3 @@ body {
   width: 100%;
 }
 
-#navbar {
-  background: linear-gradient(to right, #f3ac69, #d37b34, #60106B);
-}
