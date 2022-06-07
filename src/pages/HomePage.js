@@ -7,10 +7,7 @@ class Home extends React.Component {
     return (
       <>
         <body className="d-flex h-100 bg-image">
-          {/* <div className="d-flex w-100 h-100 p-5 mx-auto flex-column" id="mask"> */}
-          <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            {/* <h1>The Grow Club</h1> */}
-
+          <div className=" w-100 h-100 p-3 mx-auto flex-column">
             <main className="px-3">
               <h2>Welcome to our Garden:</h2>
               <p className="lead" id="coverslogan">
@@ -23,7 +20,6 @@ class Home extends React.Component {
               </p>
             </main>
           </div>
-          {/* </div> */}
         </body>
       </>
     );

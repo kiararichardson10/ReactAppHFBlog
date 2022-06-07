@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./components/HomeComponent";
-import { BrowserRouter } from "react-router-dom";
+import Home from "./pages/HomePage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Community } from "./components/CommunityComponent";
+import { Community } from "./pages/CommunityPage";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
@@ -34,7 +34,8 @@ function App() {
   return (
     <div>
       <Header />
-      <Home />
+      {/* <Home /> */}
+
       <Footer />
     </div>
   );
