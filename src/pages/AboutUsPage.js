@@ -1,5 +1,5 @@
 import React from "react";
 
 export const AboutUsPage = () => {
-  return <div>AboutUsPage</div>;
+  return <div className="text-white">AboutUs Page</div>;
 };

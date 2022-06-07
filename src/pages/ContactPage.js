@@ -1,5 +1,5 @@
 import React from "react";
 
 export const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return <div className="text-white">Contact Page</div>;
 };

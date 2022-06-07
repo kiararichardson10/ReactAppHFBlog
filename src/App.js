@@ -1,8 +1,10 @@
 import React from "react";
-import Home from "./pages/HomePage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Community } from "./pages/CommunityPage";
+import { ContactPage } from "./pages/ContactPage";
+import { AboutUsPage } from "./pages/AboutUsPage";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
@@ -32,10 +34,14 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      {/* <Home /> */}
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
       <Footer />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
 
 export function Community() {
-  return;
+  return <div className="text-white">Community Page</div>;
 }
