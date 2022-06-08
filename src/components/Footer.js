@@ -1,21 +1,36 @@
 import React, { useState, Modal } from "react";
-import { Container, Row, Col, Button, Form } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Footer = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // Build joinMailingList Modal
+  // const [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   return (
     <footer className="site-footer">
       <Container>
         <Row>
           <Col xs={{ size: 4, offset: 1 }} sm="2" className="text-dark">
-            This will be site navigation!
+            <h5 className="text-white">Links</h5>
+            <ul className="list-unstyled">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/community">Community</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
           </Col>
           <Col xs="6" sm="3" className="text-white text-center">
             Portfolio project for{" "}
