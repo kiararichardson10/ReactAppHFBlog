@@ -9,6 +9,7 @@ import {
   faHouseChimney,
   faPeopleGroup,
 } from "@fortawesome/free-solid-svg-icons";
+import { UserLoginForm } from "../features/UserLoginForm";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,6 +43,7 @@ export const Header = () => {
             </NavLink>
           </NavItem>
         </Nav>
+        <UserLoginForm />
       </Collapse>
     </Navbar>
   );

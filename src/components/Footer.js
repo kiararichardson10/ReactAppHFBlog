@@ -40,7 +40,7 @@ export const Footer = () => {
             </ul>
           </Col>
           <Col xs="6" sm="3" className="text-dark text-center">
-            Portfolio project for{" "}
+            <h5>Portfolio project for</h5>{" "}
             <a href="https://www.nucamp.co/" className="text-warning">
               Full Stack Bootcamp
             </a>
@@ -53,8 +53,8 @@ export const Footer = () => {
             </a>
           </Col>
           <Col xs="6" sm="3">
-            <h5 className="text-dark text-center">Social Media</h5>
-            <ul className="align-items-center">
+            <h5 className="text-dark text-center">Dev Socials</h5>
+            <div className="d-flex justify-content-center">
               <a
                 role="button"
                 className="btn btn-link"
@@ -83,18 +83,18 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon icon={faLeaf} />
               </a>
-            </ul>
+            </div>
           </Col>
-          <Col>
+          <Col xs="6" sm="3">
+            <Button color="warning">Join Our Mailing List</Button>
+            {/* <br />
             <a
               role="button"
               className="btn btn-link"
               href="mailto:fakeaddy@fakeemail.com"
             >
               <FontAwesomeIcon icon={faEnvelope} /> Admin@TheGrowClub.com
-            </a>
-            <br />
-            <Button color="warning">Join Our Mailing List</Button>
+            </a> */}
           </Col>
         </Row>
       </Container>
