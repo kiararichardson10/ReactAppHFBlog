@@ -1,7 +1,12 @@
 import React, { useState, Modal } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedinIn,
+  faYoutubeSquare,
+} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,7 +21,9 @@ export const Footer = () => {
       <Container>
         <Row>
           <Col xs={{ size: 4, offset: 1 }} sm="2" className="text-dark">
-            <h5 className="text-white">Links</h5>
+            <h5 className="text-white" id="footerHeader">
+              Links
+            </h5>
             <ul className="list-unstyled">
               <li>
                 <Link to="/">Home</Link>
@@ -44,6 +51,41 @@ export const Footer = () => {
             >
               Kiara Richardson
             </a>
+          </Col>
+          <Col>
+            <h5 className="text-white text-center" id="footerHeader">
+              Social Media
+            </h5>
+            <ul className="align-items-center">
+              <a
+                role="button"
+                className="btn btn-link"
+                href="https://www.linkedin.com/in/kiara-richardson-146ba788/"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>{" "}
+              <a
+                role="button"
+                className="btn btn-link"
+                href="https://github.com/kiararichardson10/ReactAppHFBlog"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a
+                role="button"
+                className="btn btn-link"
+                href="https://youtube.com/"
+              >
+                <FontAwesomeIcon icon={faYoutubeSquare} />
+              </a>
+              <a
+                role="button"
+                className="btn btn-link"
+                href="https://leafly.com/"
+              >
+                <FontAwesomeIcon icon={faLeaf} />
+              </a>
+            </ul>
           </Col>
           <Col>
             <a
