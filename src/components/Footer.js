@@ -21,7 +21,7 @@ export const Footer = () => {
       <Container>
         <Row>
           <Col xs={{ size: 4, offset: 1 }} sm="2" className="text-dark">
-            <h5 className="text-white" id="footerHeader">
+            <h5 className="text-dark" id="footerHeader">
               Links
             </h5>
             <ul className="list-unstyled">
@@ -39,7 +39,7 @@ export const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col xs="6" sm="3" className="text-white text-center">
+          <Col xs="6" sm="3" className="text-dark text-center">
             Portfolio project for{" "}
             <a href="https://www.nucamp.co/" className="text-warning">
               Full Stack Bootcamp
@@ -52,10 +52,8 @@ export const Footer = () => {
               Kiara Richardson
             </a>
           </Col>
-          <Col>
-            <h5 className="text-white text-center" id="footerHeader">
-              Social Media
-            </h5>
+          <Col xs="6" sm="3">
+            <h5 className="text-dark text-center">Social Media</h5>
             <ul className="align-items-center">
               <a
                 role="button"
