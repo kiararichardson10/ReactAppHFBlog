@@ -1,5 +1,5 @@
 import React, { useState, Modal } from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col, Button, ModalHeader } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLeaf } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -12,9 +12,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Footer = () => {
   // Build joinMailingList Modal
-  // const [show, setShow] = useState(false);
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
+
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => {
+    setModal(!modal);
+  };
 
   return (
     <footer className="site-footer">
@@ -40,7 +43,7 @@ export const Footer = () => {
             </ul>
           </Col>
           <Col xs="6" sm="3" className="text-dark text-center">
-            <h5>Portfolio project for</h5>{" "}
+            <h5 id="footerHeader">Portfolio project for</h5>{" "}
             <a href="https://www.nucamp.co/" className="text-warning">
               Full Stack Bootcamp
             </a>
@@ -86,15 +89,9 @@ export const Footer = () => {
             </div>
           </Col>
           <Col xs="6" sm="3">
-            <Button color="warning">Join Our Mailing List</Button>
-            {/* <br />
-            <a
-              role="button"
-              className="btn btn-link"
-              href="mailto:fakeaddy@fakeemail.com"
-            >
-              <FontAwesomeIcon icon={faEnvelope} /> Admin@TheGrowClub.com
-            </a> */}
+            <Button color="warning">
+              <FontAwesomeIcon icon={faEnvelope} /> Join Our Mailing List
+            </Button>
           </Col>
         </Row>
       </Container>

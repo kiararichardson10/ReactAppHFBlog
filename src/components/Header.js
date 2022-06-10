@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Collapse, NavbarToggler, Nav, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import {
   faAddressCard,
   faCircleInfo,
@@ -10,6 +10,7 @@ import {
   faPeopleGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { UserLoginForm } from "../features/UserLoginForm";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -13,4 +13,11 @@ import {
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const ContactAdminForm = () => {};
+export const ContactAdminForm = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => {
+    setModal(!modal);
+  };
+  return <></>;
+};
