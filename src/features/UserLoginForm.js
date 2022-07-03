@@ -22,13 +22,20 @@ export const UserLoginForm = () => {
   };
   return (
     <>
-      <Button color="warning" onClick={toggle}>
+      <Button color="info" title="Login or Create Account" onClick={toggle}>
         {" "}
-        <FontAwesomeIcon icon={faRightToBracket} />
-        Login
+        <FontAwesomeIcon icon={faRightToBracket} /> Welcome
       </Button>
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle} charCode="close">
+      <Modal
+        className="modal-dialog modal-dialog-centered"
+        isOpen={modal}
+        toggle={toggle}
+      >
+        <ModalHeader
+          className="border-bottom-0"
+          toggle={toggle}
+          charCode="close"
+        >
           Login
         </ModalHeader>
         <ModalBody>

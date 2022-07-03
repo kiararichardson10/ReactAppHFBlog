@@ -17,7 +17,7 @@ export const Header = () => {
 
   return (
     <Navbar sticky="top" dark expand="md" id="navbar">
-      <h1>The Grow Club</h1>
+      <h2>The Grow Club</h2>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse navbar isOpen={menuOpen}>
         <Nav className="ms-auto" navbar>
@@ -43,7 +43,7 @@ export const Header = () => {
               <FontAwesomeIcon icon={faAddressCard} /> Contact
             </NavLink>
           </NavItem>
-        </Nav>
+        </Nav>{" "}
         <UserLoginForm />
       </Collapse>
     </Navbar>

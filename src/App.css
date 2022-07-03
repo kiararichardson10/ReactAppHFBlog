@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans:wght@300&family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 #navbar {
-  background: linear-gradient(to right, #f3ac69, #d37b34, #60106B);
+  background: linear-gradient(to right, #dc9450, #d37b34, #60106B);
+
 }
 
 .nav-link {
@@ -20,9 +25,10 @@
 }
 
 
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  color: blanchedalmond;
+h2 {
+  font-family: 'Rubik Moonrocks', cursive;
+  font-weight: bold;
+  color: rgb(209, 50, 85);
 }
 
 main {
@@ -34,18 +40,35 @@ main {
   width: 100vw;
 }
 
-h2, p {
-  font-family: 'Permanent Marker', cursive;
+.mask {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Rubik Moonrocks', cursive;
+  color: rgb(209, 50, 85);
+  text-align: center;
+  font-weight: bolder;
+}
+
+h4 {
+  font-family: 'Rubik Moonrocks', cursive;
+  font-style: italic;
   color: blanchedalmond;
   text-align: center;
+  
 }
 
 .site-footer {
   margin-top: 1rem;
   padding: 1rem;
-  background: linear-gradient(to right, #f3ac69, #d37b34, #60106B);
+  background: linear-gradient(to right, #dc9450, #d37b34, #60106B);
+  background-color: transparent;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
+
+
