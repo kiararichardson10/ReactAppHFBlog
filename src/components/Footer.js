@@ -103,7 +103,7 @@ export const FooterComponent = () => {
           </Col>
           <Col xs="6" sm="3">
             <Button
-              color="warning"
+              color="primary"
               title="Contact App Developer"
               className="mailto"
               href="mailto:kricharddc@gmail.com"

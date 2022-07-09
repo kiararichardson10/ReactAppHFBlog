@@ -1,8 +1,15 @@
-import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import {
+  MDBBreadcrumb,
+  MDBBreadcrumbItem,
+  MDBCol,
+  MDBContainer,
+  MDBRow,
+} from "mdbreact";
 import React, { Component } from "react";
 import { Header } from "../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
@@ -17,6 +24,17 @@ export const ContactPage = () => {
       <Header />
       <div>
         <MDBContainer>
+          <MDBRow>
+            <MDBCol>
+              <MDBBreadcrumb style={{ backgroundColor: "transparent" }}>
+                <MDBBreadcrumbItem>
+                  <Link to="/">Home</Link>
+                  {""}
+                </MDBBreadcrumbItem>
+                <MDBBreadcrumbItem active>Contact Us</MDBBreadcrumbItem>
+              </MDBBreadcrumb>
+            </MDBCol>
+          </MDBRow>
           <MDBRow>
             <MDBCol>
               <h3 className="p-2">Contact Us</h3>

@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-import { Card, CardText, CardTitle, Row, Col } from "reactstrap";
+import { FormGroup, Form, Button, Input } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import background from "../photos/bgphoto.JPG";
-import { UserLoginForm } from "../features/UserLoginForm";
-import { MDBRow } from "mdbreact";
+// import { UserLoginForm } from "../features/UserLoginForm";
+import { MDBCol, MDBContainer, MDBRow, MDBIcon } from "mdb-react-ui-kit";
+import { MDBBtn } from "mdb-react-ui-kit";
 
 export default function Home() {
   useEffect(() => {
@@ -19,15 +21,68 @@ export default function Home() {
         }}
       >
         <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}>
-          <MDBRow className="text-center mb-0 p-5">
+          <MDBRow className="text-center mb-0 p-4">
             <h1 className="p-5">The Grow Club</h1>
             <h4>A Community For Growers</h4>
           </MDBRow>
-          <MDBRow className="d-flex row-content flex-row">
-            <div className="p-5 text-center">
-              <UserLoginForm />
-            </div>
-          </MDBRow>
+
+          <MDBContainer>
+            <MDBRow className="d-flex row-content">
+              <MDBCol className="d-flex justify-content-center">
+                <Form>
+                  <div className="text-center text-white p-2">
+                    Sign in with:
+                  </div>
+
+                  <MDBBtn className="mx-3" tag="a" floating color="info">
+                    <MDBIcon fab icon="google" />
+                  </MDBBtn>
+                  <MDBBtn tag="a" floating color="info">
+                    <MDBIcon fab icon="microsoft" />
+                  </MDBBtn>
+                  <MDBBtn className="ms-3" tag="a" floating color="info">
+                    <MDBIcon fab icon="yahoo" />
+                  </MDBBtn>
+
+                  <br />
+                  <div className="text-white text-center p-2"> or: </div>
+
+                  <FormGroup>
+                    <Input
+                      id="username"
+                      name="username"
+                      placeholder="Username"
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <Input
+                      id="password"
+                      name="password"
+                      placeholder="Password"
+                      className="form-control"
+                    />
+                  </FormGroup>
+                  <a
+                    href="#!"
+                    className="mx-3 text-muted"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Forgot your password?
+                  </a>
+                  <div className="d-flex justify-content-center mt-2 mb-3">
+                    <MDBBtn color="warning" rounded>
+                      Login
+                    </MDBBtn>
+                  </div>
+                  <div className="text-muted text-center">
+                    <p>
+                      Not a member? <a href="#!">Register</a>
+                    </p>
+                  </div>
+                </Form>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
         </div>
       </main>
     </>
