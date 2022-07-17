@@ -31,6 +31,14 @@ export const ContactPage = () => {
                   <Link to="/">Home</Link>
                   {""}
                 </MDBBreadcrumbItem>
+                <MDBBreadcrumbItem>
+                  <Link to="/community">Community</Link>
+                  {""}
+                </MDBBreadcrumbItem>
+                <MDBBreadcrumbItem>
+                  <Link to="/about">About Us</Link>
+                  {""}
+                </MDBBreadcrumbItem>
                 <MDBBreadcrumbItem active>Contact Us</MDBBreadcrumbItem>
               </MDBBreadcrumb>
             </MDBCol>

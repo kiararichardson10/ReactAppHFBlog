@@ -8,9 +8,9 @@ import { MDBCol, MDBContainer, MDBRow, MDBIcon } from "mdb-react-ui-kit";
 import { MDBBtn } from "mdb-react-ui-kit";
 
 export default function Home() {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.overflow = "hidden";
+  // }, []);
 
   return (
     <>
@@ -47,7 +47,7 @@ export default function Home() {
                   <br />
                   <div className="text-white text-center p-2"> or: </div>
 
-                  <FormGroup>
+                  <FormGroup className="d-flex">
                     <Input
                       id="username"
                       name="username"
@@ -64,7 +64,7 @@ export default function Home() {
                   </FormGroup>
                   <a
                     href="#!"
-                    className="mx-3 text-muted"
+                    className="mx-3 text-muted d-flex"
                     style={{ textDecoration: "none" }}
                   >
                     Forgot your password?
@@ -74,7 +74,7 @@ export default function Home() {
                       Login
                     </MDBBtn>
                   </div>
-                  <div className="text-muted text-center">
+                  <div className="text-muted text-center d-flex">
                     <p>
                       Not a member? <a href="#!">Register</a>
                     </p>
