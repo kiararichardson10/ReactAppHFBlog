@@ -32,18 +32,18 @@ export const AboutUsPage = () => {
             </MDBCol>
           </MDBRow>
           <MDBRow className="d-flex row-content">
-            <MDBCol md="6">
+            <MDBCol className="mt-5" md="6">
               <h3 className="text-center">About Us</h3>
               <p
                 className="text-center mt-5"
                 style={{ fontWeight: "bolder", fontSize: "large" }}
               >
                 The Grow Club is a dedicated space for cannabis connoisseurs,
-                hobby growers, and the like to connect and share their stories,
-                growing journeys and experiences with one another. While
-                cultures and communities that partake, research, and celebrate
+                hobby growers, activists and the like to connect and share their
+                stories, growing journeys and experiences with one another.
+                While cultures and communities who use, study, and celebrate
                 cannabis have existed for centuries, stigma has forced a lot of
-                those communities behind closed doors in both the public space
+                those communities behind closed doors both in the public space
                 and online.{" "}
               </p>
               <br />
@@ -67,7 +67,7 @@ export const AboutUsPage = () => {
               <picture>
                 <img
                   src={pageImage}
-                  alt=""
+                  alt="Cannabis plant in hand"
                   className="img-fluid img-thumbnail"
                   // style={{
                   //   maxWidth: "35rem",
